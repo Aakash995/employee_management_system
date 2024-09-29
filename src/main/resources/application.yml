@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: EmployeeManagementSystem
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/employee_management_system?useSSL=false&allowPublicKeyRetrieval=true
+    username: jon_snow
+    password: "#$gamesofthrones@3456"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  logging:
+    level:
+      org:
+        hibernate:
+          SQL: DEBUG
+          type: TRACE
